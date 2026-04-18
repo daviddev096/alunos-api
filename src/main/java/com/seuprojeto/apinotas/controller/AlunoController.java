@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RequestMapping("/alunos")
-@Controller
+@RestController
 public class AlunoController {
 
     private final AlunoService  alunoService;
@@ -23,7 +23,7 @@ public class AlunoController {
     public List<Aluno> listar() {
         return alunoService.listar();
     }
-    @GetMapping("/`{id}")
+    @GetMapping("/{id}")
     public Aluno bucarPorId(@PathVariable Long id) {
         return alunoService.bucarPorId(id).orElse(null);
     }
@@ -31,7 +31,7 @@ public class AlunoController {
     public Aluno salvar(@RequestBody Aluno aluno) {
         return alunoService.salvar(aluno);
     }
-    @DeleteMapping("{id}")
+    @DeleteMapping("/{id}")
     public void deletar(@PathVariable Long id) {
         alunoService.deletar(id);
     }
