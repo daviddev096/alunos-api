@@ -26,3 +26,7 @@ O projeto utiliza o banco H2 para facilitar o teste imediato.
 * **JDBC URL:** jdbc:h2:mem:alunosdb
 * **User:** sa
 * **Password:** (em branco)
+
+### 🚀 Atualizações Futuras
+* **Implementação de DTOs (Data Transfer Objects):** Melhorar a segurança e a performance da API, controlando quais dados são expostos nas requisições e respostas.
+* **Tratamento de Exceções Personalizado:** Refinar as respostas de erro da API (como 404 Not Found ou 400 Bad Request) para retornar mensagens mais claras e amigáveis ao invés de stack traces genéricos.
