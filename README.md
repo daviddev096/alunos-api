@@ -28,7 +28,7 @@ Clique em "Try it out".
 
 Preencha o JSON de exemplo e clique em "Execute".
 
-Verifique a resposta logo abaixo.
+Verifique a resposta logo abaixo no campo Response Body.
 
 🗄️ Banco de Dados
 O projeto utiliza o banco H2 para facilitar o teste imediato.
