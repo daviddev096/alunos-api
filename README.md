@@ -15,7 +15,28 @@ O desenvolvimento desta aplicação permitiu a aplicação prática de diversos 
 * **Banco de Dados:** H2 Database
 * **Gerenciador de Dependências:** Maven
 
-## 📑 Documentação da API (Swagger)
-Para visualizar e testar os endpoints da aplicação de forma interativa, acesse a interface do Swagger através do link abaixo (com a aplicação em execução):
+📖 Documentação (Swagger)
+A API utiliza o Swagger UI para que você possa testar os endpoints diretamente do navegador sem precisar de ferramentas como Postman ou Insomnia.
 
-🔗 [Acesse o Swagger UI aqui](http://localhost:8080/swagger-ui/index.html)
+Com o projeto rodando, acesse:
+👉 http://localhost:8080/swagger-ui/index.html
+
+Como testar:
+Dentro do Swagger, escolha um endpoint (ex: POST /alunos).
+
+Clique em "Try it out".
+
+Preencha o JSON de exemplo e clique em "Execute".
+
+Verifique a resposta logo abaixo.
+
+🗄️ Banco de Dados
+O projeto utiliza o banco H2 para facilitar o teste imediato.
+
+Console H2: http://localhost:8080/h2-console
+
+JDBC URL: jdbc:h2:mem:alunosdb
+
+User: sa
+
+Password: (em branco)
