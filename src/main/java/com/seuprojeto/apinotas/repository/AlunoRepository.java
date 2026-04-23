@@ -1,10 +1,14 @@
 package com.seuprojeto.apinotas.repository;
 
-import com.seuprojeto.apinotas.model.Aluno;
+import com.seuprojeto.apinotas.model.AlunoModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 
 @Repository
-public interface AlunoRepository extends JpaRepository<Aluno, Long> {
+public interface AlunoRepository extends JpaRepository<AlunoModel, Long> {
+	
+	
 }
+
+	
